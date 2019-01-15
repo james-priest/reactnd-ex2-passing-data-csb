@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class PopularMovies extends Component {
   render() {
-    return <div>who dis?</div>;
+    return <div>new party, who dis?</div>;
   }
 }
 
