@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import UserList from './UserList';
 
 class PopularMovies extends Component {
   render() {
@@ -9,6 +10,7 @@ class PopularMovies extends Component {
         {moviesArr.map(movie => (
           <div key={movie.id}>
             <h3>{movie.name}</h3>
+            <UserList movieID={movie.id} users={users} profiles={profiles} />
           </div>
         ))}
       </div>
