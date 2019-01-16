@@ -19,7 +19,7 @@ class UserList extends Component {
         </div>
       );
     } else {
-      return <div>empty - no names...</div>;
+      return <p>None of the current users liked this movie</p>;
     }
   }
 }
