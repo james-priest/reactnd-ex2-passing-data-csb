@@ -19,6 +19,10 @@
   font-size: large;
 }
 
+.App-main {
+  margin: 0 10px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
