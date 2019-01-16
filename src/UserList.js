@@ -6,14 +6,14 @@ class UserList extends Component {
     const filteredProfiles = profiles.filter(
       profile => Number(profile.favoriteMovieID) === movieID
     );
-    console.log(filteredProfiles);
+    // console.log(filteredProfiles);
     if (filteredProfiles.length > 0) {
       return (
-        <div key={filteredProfiles.id}>
+        <div>
           <p>Liked by:</p>
           <ul>
             {filteredProfiles.map(profile => (
-              <li>name...</li>
+              <li key={profile.userID}>{users[profile.userID].name}</li>
             ))}
           </ul>
         </div>
