@@ -10,6 +10,7 @@ class App extends Component {
         <header className="App-header">
           <img src="logo.svg" className="App-logo" alt="logo" />
           <h1 className="App-title">ReactND - Coding Practice</h1>
+          <p>Exercise 2 - Passing Data</p>
         </header>
         <main className="App-main">
           <h2>How Popular is Your Favorite Movie?</h2>
