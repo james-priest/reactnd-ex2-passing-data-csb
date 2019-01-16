@@ -8,7 +8,16 @@ class UserList extends Component {
     );
     console.log(filteredProfiles);
     if (filteredProfiles.length > 0) {
-      return <div>got names...</div>;
+      return (
+        <div key={filteredProfiles.id}>
+          <p>Liked by:</p>
+          <ul>
+            {filteredProfiles.map(profile => (
+              <li>name...</li>
+            ))}
+          </ul>
+        </div>
+      );
     } else {
       return <div>empty - no names...</div>;
     }
