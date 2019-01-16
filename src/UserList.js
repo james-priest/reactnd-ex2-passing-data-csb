@@ -7,7 +7,11 @@ class UserList extends Component {
       profile => Number(profile.favoriteMovieID) === movieID
     );
     console.log(filteredProfiles);
-    return <div>names...</div>;
+    if (filteredProfiles.length > 0) {
+      return <div>got names...</div>;
+    } else {
+      return <div>empty - no names...</div>;
+    }
   }
 }
 
